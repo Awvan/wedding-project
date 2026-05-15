@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syaiful & Indah - The Vibrant Wedding</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Montserrat:wght@900&family=Yellowtail&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --vibrant-pink: #FF0080;
+            --vibrant-purple: #7928CA;
+            --vibrant-orange: #FF4D4D;
+            --vibrant-bg: #0f172a;
+        }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: var(--vibrant-bg); color: #fff; }
+        .font-bold-display { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+        .font-playful { font-family: 'Yellowtail', cursive; }
+        
+        /* Glassmorphism Berwarna */
+        .vibrant-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2rem;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #FF0080, #FF4D4D, #FBAD50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-vibrant {
+            background: linear-gradient(45deg, #FF0080, #7928CA);
+            transition: all 0.3s ease;
+        }
+        .btn-vibrant:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 0, 128, 0.4);
+        }
+
+        /* Custom Scrollbar Vibrant */
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: linear-gradient(#FF0080, #7928CA); border-radius: 10px; }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-pink-500 selection:text-white">
+
+    <div class="fixed top-0 -left-20 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-[100px] opacity-30 animate-pulse"></div>
+    <div class="fixed bottom-0 -right-20 w-72 h-72 bg-pink-600 rounded-full mix-blend-multiply filter blur-[100px] opacity-30 animate-pulse"></div>
+
+    <main class="max-w-md mx-auto relative min-h-screen px-4 pb-32">
+        
+        <section id="home" class="pt-6 mb-10" data-aos="zoom-in">
+            <div class="relative h-[80vh] rounded-[3rem] overflow-hidden shadow-2xl border-2 border-white/10">
+                <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=1000" 
+                     alt="Vibrant Wedding" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-end pb-12 px-6 text-center">
+                    <div data-aos="fade-up">
+                        <span class="px-4 py-1 bg-pink-600 rounded-full text-[10px] font-bold tracking-[0.3em] mb-4 inline-block">SAVE THE DATE</span>
+                        <h1 class="font-bold-display text-5xl leading-none mb-2">SYAIFUL<br><span class="text-gradient">&</span><br>INDAH</h1>
+                        <p class="text-sm tracking-[0.4em] opacity-80 mt-4">26 . 06 . 2026</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vibrant-card mt-6 p-6 text-center border-l-4 border-l-pink-500" data-aos="fade-up">
+                <p class="text-[10px] font-bold tracking-widest text-pink-500 mb-1">UNTUK SAHABAT KAMI:</p>
+                <h2 id="guest-name" class="text-2xl font-bold-display">Tamu Spesial</h2>
+            </div>
+        </section>
+
+        <section id="opening" class="mb-10" data-aos="fade-up">
+            <div class="vibrant-card p-10 text-center relative overflow-hidden group">
+                <div class="absolute -right-4 -top-4 w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full opacity-20 group-hover:scale-150 transition duration-700"></div>
+                <h2 class="font-bold-display text-xl mb-4 italic tracking-tighter">The Journey Begins</h2>
+                <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu agar kamu merasa tenteram..."
+                </p>
+                <p class="font-bold text-[10px] text-pink-500 tracking-widest uppercase">QS. Ar-Rum: 21</p>
+            </div>
+        </section>
+
+        <section id="couple" class="space-y-12 mb-16">
+            <div class="text-center" data-aos="fade-right">
+                <div class="relative w-48 h-48 mx-auto mb-6 group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-pink-500 to-purple-600 rounded-full rotate-45 group-hover:rotate-90 transition duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1550246140-5119ae4790b8?auto=format&fit=crop&q=80&w=500" 
+                         class="relative z-10 w-full h-full object-cover rounded-full p-2">
+                </div>
+                <h3 class="font-bold-display text-2xl text-gradient">Syaiful Arifin, S.T.</h3>
+                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Putra Bapak Fulan & Ibu Fulanah</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#" class="p-2 bg-white/10 rounded-full hover:bg-pink-600 transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center py-2" data-aos="zoom-in">
+                <div class="h-[1px] w-12 bg-pink-500"></div>
+                <span class="font-playful text-5xl mx-6 text-white italic">with</span>
+                <div class="h-[1px] w-12 bg-pink-500"></div>
+            </div>
+
+            <div class="text-center" data-aos="fade-left">
+                <div class="relative w-48 h-48 mx-auto mb-6 group">
+                    <div class="absolute inset-0 bg-gradient-to-bl from-orange-500 to-pink-600 rounded-full -rotate-12 group-hover:rotate-0 transition duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=500" 
+                         class="relative z-10 w-full h-full object-cover rounded-full p-2">
+                </div>
+                <h3 class="font-bold-display text-2xl text-gradient">Indah Permata, S.Pd.</h3>
+                <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Putri Bapak Fulan & Ibu Fulanah</p>
+                <div class="flex justify-center gap-4">
+                    <a href="#" class="p-2 bg-white/10 rounded-full hover:bg-orange-500 transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="event" class="mb-10" data-aos="flip-up">
+            <div class="vibrant-card overflow-hidden bg-white/10">
+                <div class="bg-gradient-to-r from-pink-600 to-purple-600 py-6 text-center">
+                    <h2 class="font-bold-display text-xl tracking-widest text-white">WEDDING DAY</h2>
+                </div>
+                <div class="p-8 space-y-10 text-center">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="vibrant-card p-4 bg-white/5 border-pink-500/20">
+                            <i data-lucide="heart" class="w-5 h-5 mx-auto mb-2 text-pink-500"></i>
+                            <h3 class="text-[9px] font-bold uppercase mb-1">Akad Nikah</h3>
+                            <p class="text-lg font-bold">08:00</p>
+                        </div>
+                        <div class="vibrant-card p-4 bg-white/5 border-purple-500/20">
+                            <i data-lucide="party-popper" class="w-5 h-5 mx-auto mb-2 text-purple-500"></i>
+                            <h3 class="text-[9px] font-bold uppercase mb-1">Resepsi</h3>
+                            <p class="text-lg font-bold">11:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="py-4">
+                        <p class="text-sm font-bold-display text-gradient mb-1">Andaliman Hall, Medan</p>
+                        <p class="text-[10px] text-slate-400">Jl. Perjuangan No. 123, Kota Medan</p>
+                    </div>
+                    
+                    <a href="https://maps.google.com" target="_blank" class="w-full py-4 btn-vibrant rounded-xl text-[11px] font-bold tracking-widest uppercase shadow-xl flex items-center justify-center gap-3 active:scale-95 transition">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-10" data-aos="fade-up">
+            <h2 class="font-bold-display text-3xl text-center mb-8 text-gradient">GALLERY</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80" class="w-full h-48 object-cover rounded-3xl" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80" class="w-full h-64 object-cover rounded-3xl -mt-16" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&q=80" class="w-full h-64 object-cover rounded-3xl" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80" class="w-full h-48 object-cover rounded-3xl -mt-16" data-aos="zoom-in" data-aos-delay="600">
+            </div>
+        </section>
+
+        <section id="wishes" class="mb-10" data-aos="fade-up">
+            <div class="vibrant-card p-8">
+                <h2 class="font-bold-display text-2xl text-center mb-2">Guest Book</h2>
+                <p class="text-center text-slate-400 text-[10px] mb-8 tracking-widest uppercase">Leave a colorful message</p>
+                
+                <form id="wish-form" class="space-y-4 mb-10">
+                    <input type="text" id="wish-name" required placeholder="Full Name" 
+                           class="w-full p-4 bg-white/5 border border-white/10 rounded-2xl text-xs text-white focus:outline-none focus:ring-2 focus:ring-pink-500 transition">
+                    <textarea id="wish-message" required placeholder="Write your happy wishes here..." 
+                              class="w-full p-4 bg-white/5 border border-white/10 rounded-2xl text-xs text-white h-28 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"></textarea>
+                    <button type="submit" class="w-full py-4 btn-vibrant text-white rounded-2xl font-bold text-[11px] uppercase tracking-widest active:scale-95 transition">
+                        Send Love
+                    </button>
+                </form>
+
+                <div id="wish-container" class="space-y-4 max-h-[300px] overflow-y-auto custom-scrollbar pr-2">
+                    <div class="p-5 bg-white/5 rounded-3xl border border-white/10">
+                        <p class="font-bold text-[11px] text-pink-500 mb-1">RAISA ADRIANA</p>
+                        <p class="text-[11px] text-slate-300">"Happy wedding Syaiful & Indah! Wishing you a lifetime of colorful adventures together!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gift" class="mb-16" data-aos="fade-up">
+            <div class="vibrant-card p-10 text-center border-t-4 border-t-pink-500">
+                <div class="w-16 h-16 bg-pink-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="gift" class="w-8 h-8 text-pink-500"></i>
+                </div>
+                <h2 class="font-bold-display text-2xl mb-4 text-gradient">DIGITAL GIFT</h2>
+                <p class="text-slate-400 text-[10px] mb-8 font-medium">Your presence is our best gift, but if you want to share more:</p>
+                
+                <div class="bg-white/5 p-6 rounded-[2rem] border border-white/10">
+                    <p class="text-[10px] font-bold text-pink-500 mb-2 uppercase tracking-widest">Bank Mandiri</p>
+                    <p class="text-2xl font-bold-display mb-1" id="rek-number">1234 5678 90</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase mb-6">a.n Syaiful Arifin</p>
+                    <button onclick="copyToClipboard('1234567890')" class="w-full py-3 bg-white text-slate-900 text-[10px] font-bold rounded-full uppercase tracking-widest hover:bg-pink-500 hover:text-white transition">Copy Number</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-10 opacity-30">
+            <h2 class="font-playful text-3xl mb-2">Syaiful & Indah</h2>
+            <p class="text-[9px] font-bold tracking-[0.5em] uppercase">Built with love • 2026</p>
+        </footer>
+
+    </main>
+
+    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-md bg-white/10 backdrop-blur-2xl border border-white/20 shadow-2xl rounded-3xl px-6 py-4 flex justify-around items-center">
+        <a href="#home" class="text-white/50 hover:text-pink-500 transition-all"><i data-lucide="home" class="w-5 h-5"></i></a>
+        <a href="#couple" class="text-white/50 hover:text-pink-500 transition-all"><i data-lucide="users" class="w-5 h-5"></i></a>
+        <a href="#event" class="text-white/50 hover:text-pink-500 transition-all"><i data-lucide="calendar" class="w-5 h-5"></i></a>
+        <a href="#gallery" class="text-white/50 hover:text-pink-500 transition-all"><i data-lucide="layout-grid" class="w-5 h-5"></i></a>
+        <a href="#wishes" class="text-white/50 hover:text-pink-500 transition-all"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+    </nav>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        lucide.createIcons();
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            alert("Nomor rekening disalin!");
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const to = params.get('to');
+        if (to) document.getElementById('guest-name').innerText = decodeURIComponent(to);
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAut_VIV_FD2V0qhnt8a1fLPpmYNzCOUY0",
+            authDomain: "indahsyaiful.firebaseapp.com",
+            databaseURL: "https://indahsyaiful-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "indahsyaiful",
+            storageBucket: "indahsyaiful.firebasestorage.app",
+            messagingSenderId: "29726222667",
+            appId: "1:29726222667:web:5bd167afcd6a41d731a0ce",
+            measurementId: "G-KFZG2ZVPE4"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const wishesCol = collection(db, "wishes");
+
+        const wishForm = document.getElementById('wish-form');
+        const wishContainer = document.getElementById('wish-container');
+
+        wishForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = wishForm.querySelector('button');
+            
+            // Perbaikan pengambilan input di sini
+            const nameInput = document.getElementById('wish-name');
+            const messageInput = document.getElementById('wish-message');
+
+            btn.disabled = true;
+            btn.innerText = "SENDING...";
+
+            try {
+                await addDoc(wishesCol, {
+                    name: nameInput.value,
+                    message: messageInput.value,
+                    timestamp: serverTimestamp()
+                });
+                wishForm.reset();
+                alert("Love received! Thank you.");
+            } catch (err) {
+                console.error(err);
+                alert("Gagal mengirim ucapan.");
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "Send Love";
+            }
+        });
+
+        // Menampilkan data dengan tema Vibrant
+        const q = query(wishesCol, orderBy("timestamp", "desc"));
+        onSnapshot(q, (snapshot) => {
+            wishContainer.innerHTML = '';
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const card = `
+                    <div class="p-5 bg-white/5 rounded-3xl border border-white/10 animate-wish mb-4">
+                        <p class="font-bold text-[11px] text-pink-500 mb-1 uppercase tracking-wider">${data.name}</p>
+                        <p class="text-[11px] text-slate-300 italic leading-relaxed">"${data.message}"</p>
+                    </div>
+                `;
+                wishContainer.insertAdjacentHTML('beforeend', card);
+            });
+        });
+    </script>
+</body>
+</html>

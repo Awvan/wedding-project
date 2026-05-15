@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Wedding of Syaiful & Indah</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --royal-gold: #C5A059;
+            --royal-navy: #020617;
+            --royal-cream: #F9F6F0;
+        }
+        body { font-family: 'Playfair Display', serif; background-color: var(--royal-navy); color: var(--royal-cream); }
+        .font-royal { font-family: 'Cinzel', serif; }
+        .font-signature { font-family: 'Great Vibes', cursive; }
+        
+        /* Frame Emas Mewah */
+        .royal-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--royal-gold);
+            position: relative;
+        }
+        .royal-border {
+            border: 2px solid var(--royal-gold);
+            outline: 1px solid var(--royal-gold);
+            outline-offset: 4px;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gold {
+            background: linear-gradient(to right, #BF953F, #AA771C);
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--royal-gold); }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-wish { animation: fadeIn 0.6s ease-out forwards; }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-amber-900 selection:text-white">
+
+    <div class="fixed inset-0 z-[-1] opacity-20 bg-[url('https://www.transparenttextures.com/patterns/black-paper.png')]"></div>
+
+    <main class="max-w-md mx-auto relative min-h-screen px-4 pb-32">
+        
+        <section id="home" class="pt-6 mb-12" data-aos="zoom-out">
+            <div class="relative h-[90vh] royal-border overflow-hidden shadow-[0_0_50px_rgba(197,160,89,0.3)]">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1000" 
+                     alt="Royal Hero" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-between py-20 px-8 text-center">
+                    <div data-aos="fade-down" data-aos-delay="300">
+                        <p class="font-royal uppercase tracking-[0.5em] text-[10px] mb-4 gold-gradient-text">The Royal Wedding of</p>
+                        <h1 class="font-royal text-5xl leading-tight gold-gradient-text">Syaiful <br>&<br> Indah</h1>
+                    </div>
+
+                    <div class="w-full space-y-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="royal-card py-8 px-4 rounded-sm border-2">
+                            <p class="text-[9px] font-royal uppercase tracking-[0.3em] text-amber-200/70 mb-3">Kepada Yth. Bapak/Ibu/Sdr/i:</p>
+                            <h2 id="guest-name" class="text-3xl font-royal gold-gradient-text italic">Tamu Undangan</h2>
+                        </div>
+                        <p class="font-royal tracking-[0.4em] text-xs text-amber-100">FRIDAY, 26 JUNE 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opening" class="mb-12" data-aos="fade-up">
+            <div class="royal-card p-10 text-center border-t-4 border-b-4 border-l-0 border-r-0">
+                <i data-lucide="crown" class="w-8 h-8 mx-auto mb-6 text-amber-500 opacity-60"></i>
+                <h2 class="font-royal text-xl mb-6 gold-gradient-text tracking-widest">ASSALAMU’ALAIKUM</h2>
+                <p class="text-amber-100/80 italic text-sm leading-relaxed mb-6">
+                    "And among His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy."
+                </p>
+                <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto mb-4"></div>
+                <p class="font-royal text-[10px] uppercase tracking-widest text-amber-500">— Ar-Rum: 21 —</p>
+            </div>
+        </section>
+
+        <section id="couple" class="space-y-12 mb-16">
+            <div class="text-center" data-aos="fade-up">
+                <div class="relative w-56 h-72 mx-auto mb-6">
+                    <div class="absolute inset-0 border-2 border-amber-500 translate-x-3 translate-y-3"></div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500" 
+                         class="relative z-10 w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                </div>
+                <h3 class="font-royal text-2xl gold-gradient-text mb-2">Syaiful Arifin, S.T.</h3>
+                <p class="text-amber-100/60 text-[10px] font-royal tracking-[0.2em] mb-4">Putra Pertama Bapak Fulan & Ibu Fulanah</p>
+                <a href="#" class="inline-flex items-center gap-2 text-amber-500 hover:text-amber-200 transition text-xs">
+                    <i data-lucide="instagram" class="w-4 h-4"></i> <span class="tracking-widest uppercase">@syaiful_arifin</span>
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center py-4" data-aos="zoom-in">
+                <span class="font-signature text-6xl gold-gradient-text">&</span>
+            </div>
+
+            <div class="text-center" data-aos="fade-up">
+                <div class="relative w-56 h-72 mx-auto mb-6">
+                    <div class="absolute inset-0 border-2 border-amber-500 -translate-x-3 translate-y-3"></div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=500" 
+                         class="relative z-10 w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                </div>
+                <h3 class="font-royal text-2xl gold-gradient-text mb-2">Indah Permata, S.Pd.</h3>
+                <p class="text-amber-100/60 text-[10px] font-royal tracking-[0.2em] mb-4">Putri Kedua Bapak Fulan & Ibu Fulanah</p>
+                <a href="#" class="inline-flex items-center gap-2 text-amber-500 hover:text-amber-200 transition text-xs">
+                    <i data-lucide="instagram" class="w-4 h-4"></i> <span class="tracking-widest uppercase">@indah_permata</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="event" class="mb-12" data-aos="fade-up">
+            <div class="royal-card border-2">
+                <div class="bg-amber-900/30 py-6 text-center border-b border-amber-500">
+                    <h2 class="font-royal text-xl tracking-[0.4em] gold-gradient-text">DATE & VENUE</h2>
+                </div>
+                <div class="p-8 space-y-10 text-center">
+                    <div>
+                        <i data-lucide="calendar" class="w-6 h-6 mx-auto mb-4 text-amber-500"></i>
+                        <h3 class="font-royal text-[11px] tracking-widest mb-3 text-amber-200">THE SOLEMNIZATION</h3>
+                        <p class="text-2xl font-royal gold-gradient-text">08:00 — 10:00 WIB</p>
+                        <p class="text-[12px] text-amber-100/70 mt-2 italic underline underline-offset-8">Friday, June 26th, 2026</p>
+                    </div>
+                    
+                    <div class="w-16 h-[1px] bg-amber-500/30 mx-auto"></div>
+
+                    <div>
+                        <i data-lucide="clock" class="w-6 h-6 mx-auto mb-4 text-amber-500"></i>
+                        <h3 class="font-royal text-[11px] tracking-widest mb-3 text-amber-200">THE RECEPTION</h3>
+                        <p class="text-2xl font-royal gold-gradient-text">11:00 — FINISH</p>
+                        <p class="font-bold text-[13px] text-amber-500 mt-4 tracking-widest">ANDALIMAN LUXURY HALL, MEDAN</p>
+                    </div>
+                    
+                    <a href="https://maps.google.com" target="_blank" class="w-full py-4 btn-gold rounded-sm text-[10px] font-royal tracking-[0.3em] uppercase shadow-lg flex items-center justify-center gap-3 active:scale-95 transition">
+                        <i data-lucide="navigation" class="w-4 h-4"></i> VIEW MAPS LOCATION
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-12" data-aos="fade-up">
+            <h2 class="font-royal text-2xl text-center mb-8 gold-gradient-text tracking-[0.3em]">OUR GALLERY</h2>
+            <div class="grid grid-cols-2 gap-2">
+                <div class="space-y-2">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80" class="w-full h-64 object-cover royal-border p-1">
+                    <img src="https://images.unsplash.com/photo-1550005814-266497275796?auto=format&fit=crop&q=80" class="w-full h-40 object-cover royal-border p-1">
+                </div>
+                <div class="space-y-2 pt-8">
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80" class="w-full h-40 object-cover royal-border p-1">
+                    <img src="https://images.unsplash.com/photo-1522673607200-1648832cee98?auto=format&fit=crop&q=80" class="w-full h-64 object-cover royal-border p-1">
+                </div>
+            </div>
+        </section>
+
+        <section id="wishes" class="mb-12" data-aos="fade-up">
+            <div class="royal-card p-8 shadow-2xl border-2">
+                <h2 class="font-royal text-2xl text-center mb-2 gold-gradient-text">GUEST BOOK</h2>
+                <p class="text-center text-amber-100/50 text-[10px] mb-8 font-royal tracking-widest">SEND YOUR NOBLE PRAYERS</p>
+                
+                <form id="wish-form" class="space-y-4 mb-10">
+                    <input type="text" id="name" required placeholder="YOUR FULL NAME" 
+                           class="w-full p-4 bg-slate-900 border border-amber-500/50 rounded-sm text-xs font-royal text-amber-100 focus:outline-none focus:border-amber-500 transition">
+                    <textarea id="message" required placeholder="YOUR PRAYERS & WISHES..." 
+                              class="w-full p-4 bg-slate-900 border border-amber-500/50 rounded-sm text-xs font-royal text-amber-100 h-28 focus:outline-none focus:border-amber-500 transition"></textarea>
+                    <button type="submit" class="w-full py-4 btn-gold rounded-sm font-royal text-[11px] tracking-[0.2em] shadow-md active:scale-95 transition">
+                        SUBMIT WISHES
+                    </button>
+                </form>
+
+                <div id="wish-container" class="space-y-4 max-h-[300px] overflow-y-auto custom-scrollbar pr-2">
+                    <div class="p-5 bg-white/5 border-l-2 border-amber-500">
+                        <p class="font-royal text-[11px] gold-gradient-text mb-1">PANGERAN MANSUR</p>
+                        <p class="text-[11px] text-amber-100/70 italic">"May your marriage be blessed with eternal happiness and prosperity. Congratulations!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gift" class="mb-16" data-aos="fade-up">
+            <div class="royal-card p-10 text-center border-2">
+                <i data-lucide="wallet-cards" class="w-8 h-8 mx-auto mb-4 text-amber-500"></i>
+                <h2 class="font-royal text-2xl mb-4 gold-gradient-text italic">DIGITAL GIFT</h2>
+                <p class="text-amber-100/60 text-[11px] mb-8 leading-relaxed font-royal">YOUR BLESSINGS ARE THE GREATEST GIFT, BUT SHOULD YOU WISH TO GIVE MORE:</p>
+                
+                <div class="bg-black/40 p-6 border border-amber-500/30">
+                    <p class="text-[9px] font-royal tracking-widest text-amber-500 mb-2 font-bold uppercase">BANK MANDIRI PRECIOUS</p>
+                    <p class="text-2xl font-royal tracking-widest gold-gradient-text mb-1" id="rek-number">1234 5678 90</p>
+                    <p class="text-[10px] text-amber-100 font-bold uppercase mb-4 tracking-widest">A.N SYAIFUL ARIFIN</p>
+                    <button onclick="copyToClipboard('1234567890')" class="px-8 py-2 bg-transparent border border-amber-500 text-[9px] text-amber-500 font-royal uppercase tracking-widest hover:btn-gold transition duration-500">Copy Account Number</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-12">
+            <h2 class="font-signature text-4xl mb-4 gold-gradient-text">Syaiful & Indah</h2>
+            <p class="text-[9px] font-royal text-amber-500 tracking-[0.5em] uppercase">Till Death Do Us Part</p>
+        </footer>
+
+    </main>
+
+    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-md bg-slate-950/90 backdrop-blur-xl border border-amber-500/50 shadow-[0_0_30px_rgba(0,0,0,0.5)] rounded-sm px-2 py-4 flex justify-around items-center">
+        <a href="#home" class="text-amber-500 hover:text-amber-100 transition-colors"><i data-lucide="home" class="w-5 h-5"></i></a>
+        <a href="#couple" class="text-amber-500 hover:text-amber-100 transition-colors"><i data-lucide="heart-handshake" class="w-5 h-5"></i></a>
+        <a href="#event" class="text-amber-500 hover:text-amber-100 transition-colors"><i data-lucide="map" class="w-5 h-5"></i></a>
+        <a href="#gallery" class="text-amber-500 hover:text-amber-100 transition-colors"><i data-lucide="aperture" class="w-5 h-5"></i></a>
+        <a href="#wishes" class="text-amber-500 hover:text-amber-100 transition-colors"><i data-lucide="scroll-text" class="w-5 h-5"></i></a>
+    </nav>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1500, once: true });
+        lucide.createIcons();
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            alert("Account Number Copied Successfully.");
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const to = params.get('to');
+        if (to) document.getElementById('guest-name').innerText = decodeURIComponent(to);
+
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAut_VIV_FD2V0qhnt8a1fLPpmYNzCOUY0",
+            authDomain: "indahsyaiful.firebaseapp.com",
+            databaseURL: "https://indahsyaiful-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "indahsyaiful",
+            storageBucket: "indahsyaiful.firebasestorage.app",
+            messagingSenderId: "29726222667",
+            appId: "1:29726222667:web:5bd167afcd6a41d731a0ce",
+            measurementId: "G-KFZG2ZVPE4"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const wishesCol = collection(db, "wishes");
+
+        const wishForm = document.getElementById('wish-form');
+        const wishContainer = document.getElementById('wish-container');
+
+        // Fungsi Kirim
+        wishForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = wishForm.querySelector('button');
+            const nameInput = document.getElementById('name');
+            const messageInput = document.getElementById('message');
+
+            btn.disabled = true;
+            btn.innerText = "SUBMITTING...";
+
+            try {
+                await addDoc(wishesCol, {
+                    name: nameInput.value,
+                    message: messageInput.value,
+                    timestamp: serverTimestamp()
+                });
+                wishForm.reset();
+                alert("Thank you for your noble prayers!");
+            } catch (err) {
+                console.error(err);
+                alert("Gagal mengirim ucapan.");
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "SUBMIT WISHES";
+            }
+        });
+
+        // Tampil Data Real-time (Royal Style)
+        const q = query(wishesCol, orderBy("timestamp", "desc"));
+        onSnapshot(q, (snapshot) => {
+            wishContainer.innerHTML = '';
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const card = `
+                    <div class="p-5 bg-white/5 border-l-2 border-amber-500 animate-wish mb-4">
+                        <p class="font-royal text-[11px] gold-gradient-text mb-1 uppercase tracking-wider">${data.name}</p>
+                        <p class="text-[11px] text-amber-100/70 italic leading-relaxed">"${data.message}"</p>
+                    </div>
+                `;
+                wishContainer.insertAdjacentHTML('beforeend', card);
+            });
+        });
+    </script>
+</body>
+</html>

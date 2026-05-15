@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Syaiful & Indah - Boho Theme</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --color-terracotta: #A65D43;
+            --color-sage: #8DA08B;
+            --color-sand: #EAE0D5;
+            --color-earth: #5E503F;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #FDF8F5; color: var(--color-earth); }
+        .font-serif { font-family: 'Lora', serif; }
+        .font-boho { font-family: 'Sacramento', cursive; }
+        
+        /* Boho Card: Lebih lembut, sudut sangat melengkung atau asimetris */
+        .boho-card {
+            background: rgba(255, 252, 249, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(166, 93, 67, 0.1);
+            box-shadow: 0 20px 40px -20px rgba(94, 80, 63, 0.1);
+        }
+        
+        .bg-pattern {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        }
+
+        /* Ornamen Daun (Dekoratif) */
+        .leaf-decor {
+            position: absolute;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--color-terracotta); border-radius: 10px; }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-float { animation: float 5s ease-in-out infinite; }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-orange-100 bg-pattern">
+
+    <div class="fixed top-10 -left-10 leaf-decor animate-float">
+        <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="#A65D43" stroke-width="0.5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1.8 8.2A7 7 0 0 1 11 20z"></path><path d="M11 20v-5a4 4 0 0 1 4-4h5"></path></svg>
+    </div>
+
+    <main class="max-w-md mx-auto relative min-h-screen px-4 pb-32">
+        
+        <section id="home" class="pt-6 mb-10" data-aos="fade-up">
+            <div class="relative h-[80vh] rounded-[4rem] rounded-tr-none overflow-hidden shadow-xl border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000" 
+                     alt="Boho Wedding" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] sepia-[20%]">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#5E503F]/60 to-transparent"></div>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-white">
+                    <p class="font-serif italic text-sm tracking-widest mb-4">You're Invited to</p>
+                    <h1 class="font-boho text-7xl mb-2">Syaiful & Indah</h1>
+                    <div class="w-20 h-[1px] bg-white/50 mb-6"></div>
+                    <p class="uppercase tracking-[0.4em] text-[10px] font-light">The Boho Celebration</p>
+                </div>
+            </div>
+
+            <div class="boho-card -mt-16 relative z-10 mx-6 p-8 rounded-[2.5rem] text-center border-b-4 border-b-[#A65D43]">
+                <p class="text-[10px] uppercase tracking-widest text-[#8DA08B] mb-2 font-semibold">Special Invite For:</p>
+                <h2 id="guest-name" class="text-3xl font-boho text-[#A65D43]">Tamu Undangan</h2>
+                <p class="mt-4 font-serif text-[11px] italic text-[#5E503F]/70">Medan, 26 Juni 2026</p>
+            </div>
+        </section>
+
+        <section id="opening" class="mb-10" data-aos="fade-up">
+            <div class="p-10 text-center">
+                <i data-lucide="flower-2" class="w-8 h-8 mx-auto mb-6 text-[#A65D43]/40"></i>
+                <h2 class="font-boho text-4xl mb-6 text-[#A65D43]">Assalamu’alaikum</h2>
+                <p class="text-[#5E503F] italic text-sm leading-relaxed font-serif">
+                    "Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."
+                </p>
+                <div class="mt-6 flex justify-center gap-2">
+                    <span class="w-1 h-1 bg-[#A65D43] rounded-full"></span>
+                    <span class="w-1 h-1 bg-[#A65D43] rounded-full"></span>
+                    <span class="w-1 h-1 bg-[#A65D43] rounded-full"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="couple" class="space-y-12 mb-16">
+            <div class="text-center" data-aos="fade-up">
+                <div class="relative w-56 h-72 mx-auto mb-6">
+                    <div class="absolute inset-0 border-2 border-[#8DA08B] rounded-full rotate-3 translate-x-2"></div>
+                    <img src="https://images.unsplash.com/photo-1550246140-5119ae4790b8?auto=format&fit=crop&q=80&w=500" 
+                         class="w-full h-full object-cover rounded-full p-2 grayscale-[10%]">
+                </div>
+                <h3 class="font-boho text-4xl text-[#A65D43]">Syaiful Arifin</h3>
+                <p class="text-[#8DA08B] text-[10px] uppercase tracking-[0.2em] font-bold mt-2">Putra Bapak Fulan & Ibu Fulanah</p>
+            </div>
+
+            <div class="flex justify-center" data-aos="zoom-in">
+                <span class="font-boho text-5xl text-[#A65D43] opacity-30">&</span>
+            </div>
+
+            <div class="text-center" data-aos="fade-up">
+                <div class="relative w-56 h-72 mx-auto mb-6">
+                    <div class="absolute inset-0 border-2 border-[#A65D43] rounded-full -rotate-3 -translate-x-2"></div>
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=500" 
+                         class="w-full h-full object-cover rounded-full p-2 grayscale-[10%]">
+                </div>
+                <h3 class="font-boho text-4xl text-[#A65D43]">Indah Permata</h3>
+                <p class="text-[#8DA08B] text-[10px] uppercase tracking-[0.2em] font-bold mt-2">Putri Bapak Fulan & Ibu Fulanah</p>
+            </div>
+        </section>
+
+        <section id="event" class="mb-10" data-aos="fade-up">
+            <div class="boho-card rounded-[3rem] overflow-hidden border-2 border-[#A65D43]/10">
+                <div class="bg-[#A65D43] py-6 text-center">
+                    <h2 class="font-serif text-sm tracking-[0.4em] uppercase text-white">Save The Date</h2>
+                </div>
+                <div class="p-8 space-y-10 text-center">
+                    <div class="space-y-4">
+                        <i data-lucide="sun" class="w-6 h-6 mx-auto text-[#A65D43] opacity-50"></i>
+                        <h3 class="font-serif font-bold text-xs uppercase tracking-widest text-[#8DA08B]">Akad & Resepsi</h3>
+                        <p class="text-3xl font-boho text-[#A65D43]">Jumat, 26 Juni 2026</p>
+                        <p class="text-[11px] text-[#5E503F] leading-loose">08:00 WIB — Selesai<br>
+                        <span class="font-bold">Andaliman Hall</span><br>Medan, Sumatera Utara</p>
+                    </div>
+                    
+                    <a href="#" class="inline-flex items-center gap-3 px-8 py-4 bg-[#8DA08B] text-white rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg hover:bg-[#A65D43] transition-all active:scale-95">
+                        <i data-lucide="map" class="w-4 h-4"></i> Petunjuk Lokasi
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-10" data-aos="fade-up">
+            <h2 class="font-boho text-5xl text-center mb-8 text-[#A65D43]">Cerita Kita</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80" class="rounded-[2rem] border-4 border-white shadow-md">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&q=80" class="rounded-[2rem] border-4 border-white shadow-md">
+                </div>
+                <div class="space-y-4 pt-8">
+                    <img src="https://images.unsplash.com/photo-1465495910483-4c56a4b0bb35?auto=format&fit=crop&q=80" class="rounded-[2rem] border-4 border-white shadow-md">
+                    <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&q=80" class="rounded-[2rem] border-4 border-white shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <section id="wishes" class="mb-10" data-aos="fade-up">
+            <div class="boho-card rounded-[3rem] p-8">
+                <h2 class="font-boho text-4xl text-center mb-2 text-[#A65D43]">Wishes</h2>
+                <p class="text-center text-[#8DA08B] text-[10px] mb-8 tracking-widest uppercase">Kirim doa & pesan manis</p>
+                
+                <form id="wish-form" class="space-y-4 mb-8">
+    <input type="text" id="name" required placeholder="Nama Anda" 
+           class="w-full p-4 bg-white/50 border border-[#A65D43]/10 rounded-2xl text-xs focus:outline-none focus:ring-1 focus:ring-[#A65D43] transition">
+    <textarea id="message" required placeholder="Tulis pesan..." 
+              class="w-full p-4 bg-white/50 border border-[#A65D43]/10 rounded-2xl text-xs h-24 focus:outline-none focus:ring-1 focus:ring-[#A65D43] transition"></textarea>
+    <button type="submit" class="w-full py-4 bg-[#A65D43] text-white rounded-2xl font-bold text-[10px] uppercase tracking-widest shadow-md active:scale-95 transition">
+        Kirim Pesan
+    </button>
+</form>
+
+                <div id="wish-container" class="space-y-4 max-h-[300px] overflow-y-auto custom-scrollbar pr-2">
+                    <div class="p-5 bg-white/40 rounded-2xl border border-white">
+                        <p class="font-bold text-[10px] text-[#A65D43] mb-1 uppercase tracking-tighter">Fiersa Besari</p>
+                        <p class="text-[11px] text-[#5E503F] italic leading-relaxed">"Selamat menempuh hidup baru! Semoga senantiasa dipenuhi bunga-bunga kebahagiaan."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gift" class="mb-16" data-aos="fade-up">
+            <div class="boho-card rounded-[3.5rem] p-10 text-center border-dashed border-2 border-[#A65D43]/20">
+                <i data-lucide="package" class="w-8 h-8 mx-auto mb-4 text-[#A65D43]"></i>
+                <h2 class="font-boho text-4xl mb-4 text-[#A65D43]">Kado Digital</h2>
+                <p class="text-[#8DA08B] text-[10px] mb-8 font-semibold tracking-widest uppercase">Tanda Kasih</p>
+                
+                <div class="bg-[#F7F3EE] p-6 rounded-3xl mb-4">
+                    <p class="text-[9px] uppercase tracking-widest text-[#8DA08B] mb-2 font-bold">Bank Mandiri</p>
+                    <p class="text-2xl font-serif tracking-[0.2em] text-[#5E503F] mb-1">1234 5678 90</p>
+                    <p class="text-[10px] text-[#A65D43] font-bold uppercase mb-6 tracking-tighter">a.n Syaiful Arifin</p>
+                    <button onclick="copyToClipboard('1234567890')" class="px-8 py-3 bg-white text-[#A65D43] text-[9px] font-bold rounded-full border border-[#A65D43]/20 uppercase tracking-widest shadow-sm hover:bg-[#A65D43] hover:text-white transition">Salin Rekening</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-10 opacity-50">
+            <h2 class="font-boho text-4xl mb-2 text-[#A65D43]">Syaiful & Indah</h2>
+            <p class="text-[9px] uppercase tracking-[0.4em] text-[#8DA08B]">#TheBohoWedding2026</p>
+        </footer>
+
+    </main>
+
+    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[85%] max-w-md bg-[#5E503F]/90 backdrop-blur-md border border-white/10 shadow-2xl rounded-full px-6 py-4 flex justify-around items-center text-white/60">
+        <a href="#home" class="hover:text-[#EAE0D5] transition-colors"><i data-lucide="home" class="w-5 h-5"></i></a>
+        <a href="#couple" class="hover:text-[#EAE0D5] transition-colors"><i data-lucide="users" class="w-5 h-5"></i></a>
+        <a href="#event" class="hover:text-[#EAE0D5] transition-colors"><i data-lucide="calendar" class="w-5 h-5"></i></a>
+        <a href="#gallery" class="hover:text-[#EAE0D5] transition-colors"><i data-lucide="camera" class="w-5 h-5"></i></a>
+        <a href="#wishes" class="hover:text-[#EAE0D5] transition-colors"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+    </nav>
+
+    <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    // 1. Config Firebase Abang
+    const firebaseConfig = {
+        apiKey: "AIzaSyAut_VIV_FD2V0qhnt8a1fLPpmYNzCOUY0",
+        authDomain: "indahsyaiful.firebaseapp.com",
+        databaseURL: "https://indahsyaiful-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "indahsyaiful",
+        storageBucket: "indahsyaiful.firebasestorage.app",
+        messagingSenderId: "29726222667",
+        appId: "1:29726222667:web:5bd167afcd6a41d731a0ce",
+        measurementId: "G-KFZG2ZVPE4"
+    };
+
+    // 2. Inisialisasi
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const wishesCol = collection(db, "wishes");
+
+    const wishForm = document.getElementById('wish-form');
+    const wishContainer = document.getElementById('wish-container');
+
+    // 3. Fungsi Kirim Ucapan
+    wishForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = wishForm.querySelector('button');
+        const name = document.getElementById('name').value;
+        const message = document.getElementById('message').value;
+
+        btn.disabled = true;
+        btn.innerText = "Mengirim...";
+
+        try {
+            await addDoc(wishesCol, {
+                name: name,
+                message: message,
+                timestamp: serverTimestamp()
+            });
+            wishForm.reset();
+            alert("Terima kasih atas doa restunya! ❤️");
+        } catch (err) {
+            console.error("Error: ", err);
+            alert("Gagal kirim, coba lagi ya!");
+        } finally {
+            btn.disabled = false;
+            btn.innerText = "Kirim Pesan";
+        }
+    });
+
+    // 4. Fungsi Tampil Ucapan (Real-time) - Style Boho
+    const q = query(wishesCol, orderBy("timestamp", "desc"));
+    onSnapshot(q, (snapshot) => {
+        wishContainer.innerHTML = ''; 
+        snapshot.forEach((doc) => {
+            const data = doc.data();
+            const date = data.timestamp ? new Date(data.timestamp.toDate()).toLocaleDateString('id-ID') : 'Baru saja';
+
+            const card = `
+                <div class="p-5 bg-white/40 rounded-2xl border border-white shadow-sm mb-4">
+                    <div class="flex justify-between items-start mb-1">
+                        <p class="font-bold text-[10px] text-[#A65D43] uppercase tracking-tighter">${data.name}</p>
+                        <span class="text-[9px] text-[#8DA08B]">${date}</span>
+                    </div>
+                    <p class="text-[11px] text-[#5E503F] italic leading-relaxed">"${data.message}"</p>
+                </div>
+            `;
+            wishContainer.insertAdjacentHTML('beforeend', card);
+        });
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1200, once: true });
+    lucide.createIcons(); // Jalankan icon
+
+    // Fungsi salin rekening
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+        alert("Nomor rekening berhasil disalin!");
+    }
+
+    // Nama tamu dari URL
+    const params = new URLSearchParams(window.location.search);
+    const to = params.get('to');
+    if (to) document.getElementById('guest-name').innerText = decodeURIComponent(to);
+</script>
+</body>
+</html>
